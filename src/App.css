@@ -1,0 +1,285 @@
+.header {
+  background-color: #303030;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header h2 {
+  margin: 0;
+  display: inline-block;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+
+.header nav {
+  display: inline-block;
+  float: right;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.header nav ul li a:hover {
+  background-color: #ddd;
+}
+
+.about-area {
+  padding: 60px 20px;
+  background-color: #ffe5e5;
+
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.about-left img {
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-right h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.about-left,
+.about-right {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.intro-area {
+  padding: 60px 20px;
+  background-color: #f5faff; /* 밝은 파랑톤 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.intro-content input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.intro-content button {
+  padding: 8px 16px;
+  background-color: #6ba8ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.intro-content button:hover {
+  background-color: #4c8de0;
+}
+
+.intro-content p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 8px;
+}
+
+.contact-area {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.contact-list i {
+  font-size: 20px;
+  color: #555;
+}
+
+.portfolio-area {
+  padding: 60px 20px;
+  background-color: #f7f7ff;
+  text-align: center;
+}
+
+.portfolio-area h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.tab-buttons button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 2px solid #afd0ff; /* 파란색 테두리 */
+
+  border-radius: 12px 12px 12px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-buttons button.active {
+  background-color: #6ba8ff;
+  color: white;
+  border: none;
+}
+
+.tab-buttons button:hover {
+  background-color: #6ba8ff;
+  border: none;
+  color: #d7e7ff;
+}
+
+.tab-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 12px 12px 12px 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.tab-content ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.tab-content p {
+  margin: 0;
+}
+
+.dream-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #dbf7ff;
+  color: rgb(0, 0, 0);
+  border: 2px solid #d1e4ff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dream-button:hover {
+  background-color: #c3f2ff; /* hover 시 더 진하게 */
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 16px;
+  background-color: #4f46e5; /* 보라색 계열 */
+  color: white;
+  border: none;
+  border-radius: 9999px; /* 동그랗게 */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  background-color: #4338ca; /* hover 시 더 진한 보라색 */
+  transform: translateY(-2px); /* 살짝 위로 뜨는 효과 */
+}
+
+.contact-area {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center; /* ← 중앙 정렬 */
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; /* ← 리스트 자체도 가운데로 */
+}
+
+.contact-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 10px;
+}

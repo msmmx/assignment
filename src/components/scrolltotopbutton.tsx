@@ -18,10 +18,7 @@ function ScrollToTopButton() {
 
   return (
     show && (
-      <button
-        onClick={scrollToTop}
-        style={{ position: "fixed", bottom: "20px", right: "20px" }}
-      >
+      <button onClick={scrollToTop} className="scroll-to-top">
         ⬆️ TOP
       </button>
     )

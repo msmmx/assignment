@@ -1,21 +1,20 @@
 import "./App.css";
 import React from "react";
-import Portfolio from "./portfolio";
-import ScrollToTopButton from "./scrolltotopbutton";
+import Portfolio from "./components/portfolio";
+import ScrollToTopButton from "./components/scrolltotopbutton";
+import IntroEditor from "./components/introeditor";
+import About from "./components/about";
+import Contact from "./components/contact";
 
 function App() {
   return (
     <>
       <div className="App">
         <header className="header">
-          <h2>
-            <a href="#">👾MSMMX WORLD👾</a>
-          </h2>
+          <h2>👾MSMMX WORLD👾</h2>
+
           <nav>
             <ul>
-              <li>
-                <a href="#">HOME</a>
-              </li>
               <li>
                 <a href="#about">ABOUT</a>
               </li>
@@ -23,15 +22,17 @@ function App() {
                 <a href="#portfolio">PORTFOLIO</a>
               </li>
               <li>
-                <a href="#contact">CONTACT</a>
+                <a href="#contact"> CONTACT</a>
               </li>
             </ul>
           </nav>
-          <button id="darkModeToggle">🌙 다크모드</button>
         </header>
 
         <main>
+          <About />
+          <IntroEditor />
           <Portfolio />
+          <Contact />
           <ScrollToTopButton />
         </main>
       </div>
