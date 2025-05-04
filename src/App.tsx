@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+
 import Portfolio from "./components/portfolio";
 import ScrollToTopButton from "./components/scrolltotopbutton";
 import IntroEditor from "./components/introeditor";
