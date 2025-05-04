@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function Portfolio() {
-  const [tab, setTab] = useState("");
+  const [tab, setTab] = useState("project1");
   const handleTabClick = (value: string) => {
     setTab((prev) => (prev === value ? "" : value));
   };

@@ -5,6 +5,7 @@ import ScrollToTopButton from "./components/scrolltotopbutton";
 import IntroEditor from "./components/introeditor";
 import About from "./components/about";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Portfolio />
           <Contact />
           <ScrollToTopButton />
+          <Footer />
         </main>
       </div>
     </>
